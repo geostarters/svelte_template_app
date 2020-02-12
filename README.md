@@ -1,17 +1,10 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
 
----
+# svelte template app
 
-# svelte app
+Based on template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+UI Material from https://github.com/hperrin/svelte-material-ui
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
-
-```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
 
 *Note that you will need to have [Node.js](https://nodejs.org) installed.*
 
