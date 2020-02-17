@@ -1,30 +1,39 @@
 <script>
-	export let name;
+ import "../node_modules/mapbox-gl/dist/mapbox-gl.css";
+  import { onDestroy } from "svelte";
+  import { stateDrawer } from "./Utils/stores.js";
+  import TopBar from "./Panels/TopBar.svelte";
+	import Map from "./Components/Map.svelte";
+	import MapAttribution from "./Components/MapAttribution.svelte";
+  import DrawerLeft from "./Panels/DrawerLeft.svelte";
+  
+
+  let toggle = false;
+  let openModalInfo;
+
+  const unsubscribe = stateDrawer.subscribe(value => {
+    //console.info($stateDrawer);
+    //console.info(value);
+    toggle = value;
+  });
+  function activate() {
+    alert("hola");
+  }
 </script>
 
-<main>
-	<h1>Hello {name}!</h1>
-	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
-</main>
-
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
 </style>
+
+<div class="container">
+ 
+  <TopBar bind:openModalInfo />
+  <DrawerLeft />
+  <Map
+lat={41.732} 
+lon={1.732} 
+zoom={8}
+style={"https://geoserveis.icgc.cat/contextmaps/icgc.json"}>
+<MapAttribution/>
+</Map>
+</div>
