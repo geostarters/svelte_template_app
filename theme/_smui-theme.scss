@@ -13,28 +13,17 @@ $mdc-theme-surface: #fff;
 $mdc-theme-error: $material-color-red-900;
 $mdc-theme-on-primary:#fff;
 
-
-
-header {
-    position: fixed;
-    width: 100% !important;
-    top: 0;
-    left: 0;
-    height: 4rem;
-    background: #1A4971 !important;
-    color:white !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
-  };
-
-
-  .search-text-input {
-    color: #fff;
-    margin-top: 9px;
-    margin-left: 10px;
+* :global(.mdc-drawer--modal, .mdc-drawer-scrim) {
+  /* This is not needed for a page-wide modal. */
+  position: absolute;
 }
+* :global(.app-content) {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+  flex-grow: 1;
+}
+
 
     .mdc-text-field {
       border-radius: 4px 4px 0 0;
@@ -61,6 +50,19 @@ header {
       will-change: opacity,transform,color;
   }
 
+  header {
+    position: fixed;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+    height: 4rem;
+    background: #1A4971 !important;
+    color:white !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.26);
+  }
   .top-app-bar-container {
     overflow: auto;
     display: inline-block;
@@ -106,11 +108,6 @@ header {
   box-shadow: 0 3px 10px #555;
 }
 
-.bt-info{
-
-  margin-top: 10px;
-
-}
 
 #map {
   width: 100%;

@@ -19,7 +19,6 @@
     "svelte": "^3.0.0",
     "svelte-material-ui": "^1.0.0-beta.20",
     "node-sass": "^4.13.1",
-    "error-ex": "git+https://github.com/Qix-/node-error-ex.git",
     "mapbox-gl": "latest"
   },
   "dependencies": {

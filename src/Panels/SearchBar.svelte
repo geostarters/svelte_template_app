@@ -23,9 +23,12 @@
       </div>
 
 <style>
+.search-text-input {
 
-
-
-
+    margin-top: 9px;
+    margin-left: 10px;
+}
 </style>
+
+
 
