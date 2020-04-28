@@ -10,6 +10,8 @@
     "@geostarters/eslint-config": "^0.0.1",
     "@rollup/plugin-commonjs": "^11.0.0",
     "@rollup/plugin-node-resolve": "^7.0.0",
+    "mapbox-gl": "latest",
+    "node-sass": "^4.13.1",
     "rollup": "^1.20.0",
     "rollup-plugin-css-only": "^2.0.0",
     "rollup-plugin-livereload": "^1.0.0",
@@ -17,9 +19,7 @@
     "rollup-plugin-svelte": "^5.0.3",
     "rollup-plugin-terser": "^5.1.2",
     "svelte": "^3.0.0",
-    "svelte-material-ui": "^1.0.0-beta.20",
-    "node-sass": "^4.13.1",
-    "mapbox-gl": "latest"
+    "svelte-material-ui": "^1.0.0-beta.20"
   },
   "dependencies": {
     "sirv-cli": "^0.4.4"

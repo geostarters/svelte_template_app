@@ -6,6 +6,7 @@
 	import Map from "./Components/Map.svelte";
 	import MapAttribution from "./Components/MapAttribution.svelte";
   import DrawerLeft from "./Panels/DrawerLeft.svelte";
+  import Logo from "./Panels/Logo.svelte";
   
 
   let toggle = false;
@@ -29,6 +30,7 @@
  
   <TopBar bind:openModalInfo />
   <DrawerLeft />
+  <Logo/>
   <Map
 lat={41.732} 
 lon={1.732} 
