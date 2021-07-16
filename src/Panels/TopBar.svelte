@@ -1,14 +1,10 @@
 <script>
   import { stateDrawer } from "../Utils/stores.js";
-  import SearchBar from "./SearchBar.svelte";
   import Modal from "./Modal.svelte";
   import TopAppBar, {
     Row,
     Section,
     Title,
-    FixedAdjust,
-    DenseFixedAdjust,
-    ProminentFixedAdjust,
     ShortFixedAdjust
   } from "@smui/top-app-bar";
   import IconButton from "@smui/icon-button";
@@ -46,7 +42,7 @@
         <IconButton on:click={changeDrawerState} class="material-icons">
           menu
         </IconButton>
-        <SearchBar />
+      
       </Section>
 
       <Section align="middle" toolbar>

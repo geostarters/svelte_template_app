@@ -1,7 +1,6 @@
 <script>
   import { onMount, setContext } from "svelte";
-  import mapbox from 'mapbox-gl';
-  import {keyApp } from "../constants";
+  import { mapbox, keyApp } from "./mapbox.js";
 
   setContext(keyApp,{
     getMap: () => map
@@ -31,11 +30,12 @@
 </script>
 
 <style>
-  #map {
-    width: 100%;
-    height: 100%;
-	  margin:0;
-	
+ #map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
   }
 </style>
 
