@@ -1,1 +1,1 @@
-export const mapBoxAccessToken ="";
+export const mapBoxAccessToken =""; 

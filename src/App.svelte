@@ -35,7 +35,7 @@
 lat={41.732} 
 lon={1.732} 
 zoom={8}
-style={"https://tilemaps.icgc.cat/tileserver/styles/water.json"}>
+style={"https://geoserveis.icgc.cat/contextmaps/icgc_orto_toponimia.json"}>
 <MapAttribution/>
 </Map>
 </div>

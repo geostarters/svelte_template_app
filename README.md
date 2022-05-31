@@ -1,5 +1,5 @@
 
-# Map Viewer svelte template app
+# ICGC Contextmaps Svelte Template
 
 Based on template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
 
