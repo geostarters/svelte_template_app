@@ -1,5 +1,5 @@
 
-(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
+(function(l, r) { if (!l || l.getElementById('livereloadscript')) return; r = l.createElement('script'); r.async = 1; r.src = '//' + (self.location.host || 'localhost').split(':')[0] + ':35730/livereload.js?snipver=1'; r.id = 'livereloadscript'; l.getElementsByTagName('head')[0].appendChild(r) })(self.document);
 var app = (function () {
     'use strict';
 
@@ -7102,10 +7102,6 @@ var app = (function () {
     });
 
     const mapBoxAccessToken ="pk.eyJ1IjoidWJlcmRhdGEiLCJhIjoiY2p5aHB5bzEzMDI3MjNucWx4dmhvbW5wYyJ9.ZjLMWjog4imdrZhtheCOtA";
-
-    // https://docs.mapbox.com/help/glossary/access-token/
-
-
 
     mapboxGl.accessToken = mapBoxAccessToken;
 
@@ -16009,7 +16005,7 @@ var app = (function () {
     				lat: 41.732,
     				lon: 1.732,
     				zoom: 8,
-    				style: "https://geoserveis.icgc.cat/contextmaps/icgc_orto_toponimia.json",
+    				style: "./icgc_mapa_estandard.json",
     				$$slots: { default: [create_default_slot] },
     				$$scope: { ctx }
     			}
